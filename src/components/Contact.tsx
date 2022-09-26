@@ -1,7 +1,14 @@
 import React from "react";
-import Map from "./Map";
+import {Map} from "./Map";
 
-export default function Contact(props) {
+type Props = {
+  name: string;
+  email: string;
+  site: string;
+  center: google.maps.LatLng;
+};
+
+export default function Contact(props: Props) {
   return (
     <div>
       <address>
